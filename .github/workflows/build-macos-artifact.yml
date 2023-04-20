@@ -43,19 +43,6 @@ jobs:
       - name: Copy GodotSteam Module
         run: |
           cp -r godotsteam godot/modules/godotsteam
-      # Checkout Steamworks SDK
-      - name: Checkout Steamworks SDK
-        uses: actions/checkout@v3
-        with:
-          path: "steamworks"
-          repository: ${{ secrets.steamworks_sdk_repo }}
-          token: ${{ secrets.steamworks_sdk_repo_token }}
-          ref: ${{ inputs.steamworks_sdk_tag }}
-      - name: Copy Steamworks
-        run: |
-          cp -r steamworks/public godot/modules/godotsteam/sdk
-          cp -r steamworks/redistributable_bin godot/modules/godotsteam/sdk
-          ls -la godot/modules/godotsteam/sdk
       # Install the Vulkan SDK, script copied from the official Godot build scripts.
       - name: Install Vulkan SDK
         run: |

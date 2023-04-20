@@ -15,9 +15,14 @@
 __pycache__/
 *.pyc
 
-# Steam SDK
-sdk/*
-!sdk/put SDK here
+# SDK
+!sdk/redistributable_bin/steam_api.dll
+!sdk/redistributable_bin/steam_api.lib
+!sdk/redistributable_bin/linux32/libsteam_api.so
+!sdk/redistributable_bin/linux64/libsteam_api.so
+!sdk/redistributable_bin/osx/libsteam_api.dylib
+!sdk/redistributable_bin/win64/steam_api64.dll
+!sdk/redistributable_bin/win64/steam_api64.lib
 
 # Doxygen
 doxygen/
