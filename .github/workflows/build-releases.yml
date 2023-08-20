@@ -12,7 +12,7 @@ on:
         description: 'Godot Github tag:'
         required: true
         type: string
-        default: '4.0.2-stable'
+        default: '37c632fcce3b34f81a07f4cec3b87ba21dcd050b'
       godotsteam_version:
         description: 'GodotSteam version number:'
         required: true
